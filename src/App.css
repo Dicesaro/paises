@@ -1,0 +1,114 @@
+@import url("@fontsource-variable/plus-jakarta-sans");
+@import url("@fontsource-variable/inter");
+
+* {
+  font-family: "Plus Jakarta Sans Variable";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #18181b;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 50px;
+
+  & h1 {
+    font-family: 'Plus Jakarta Sans Variable';
+    font-size: 44px;
+    font-weight: 700;
+    text-align: center;
+    color: #f9fafb;
+  }
+
+  & p {
+    font-family: "Inter Variable";
+    font-size: 18px;
+    text-align: center;
+    color: #f9fafb;
+    margin: 0 300px 0 300px;
+  }
+
+  & input {
+    background-color: #f9fafb;
+    border: none;
+    border: thin solid #f97316;
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 12px;
+  }
+
+  & button {
+    background-color: #f97316;
+    color: #f9fafb;
+    border: none;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 12px;
+  }
+
+}
+
+.App-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+
+  & .subtitle {
+    font-weight: 600;
+    color: #f97316;
+  }
+
+  & .card_countrys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  & .flags_countrys {
+
+    & img {
+      width: 400px;
+      height: auto;
+    }
+  }
+
+  & .data_country {
+
+    /* border: thin solid #f97316; */
+
+    & p {
+      font-family: "Plus Jakarta Sans Variable";
+      font-weight: 700;
+      background-color: none;
+    }
+
+    & td {
+      border-width: 1px;
+      padding: 10px;
+      text-align: left;
+      color: #f9fafb;
+      border: thin solid #f97316;
+    }
+
+  }
+
+}
+
+@media (max-width: 768px) {
+  .App-main .card_countrys {
+    flex-direction: column;
+  }
+
+  .App-main .flags_countrys img {
+    width: 100%;
+  }
+}
