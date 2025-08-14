@@ -3,7 +3,7 @@ export const searchCountry = async ({ search }) => {
 
   try {
     const response = await fetch(
-      `https://restcountries.com/v3.1/name/${search}?fields=name,capital,flags,region,languages,currencies,callingCodes,borders,area,population,timezones,maps,coatOfArms`
+      `https://restcountries.com/v3.1/name/${search}?fields=name,capital,flags,region,languages,currencies,callingCodes,borders,area,population,maps,coatOfArms`
     )
 
     const json = await response.json()
@@ -40,7 +40,6 @@ export const searchCountry = async ({ search }) => {
             : null,
           borders: bordersInfo,
           area: country.area,
-          timezones: country.timezones,
           maps: {
             googleMaps: country.maps?.googleMaps,
             openStreetMaps: country.maps?.openStreetMaps,

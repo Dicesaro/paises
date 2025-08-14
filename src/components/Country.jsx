@@ -77,25 +77,6 @@ function ListOfCountry({ country }) {
               </tr>
               <tr>
                 <td>
-                  <h2 className="subtitle">Huso Horario:</h2>
-                </td>
-                <td>
-                  {country.timezones?.length > 0 ? (
-                    country.timezones.map((timezone, index) => (
-                      <span key={index}>
-                        {timezone}
-                        {index < country.timezones.length - 1
-                          ? ', '
-                          : ''}
-                      </span>
-                    ))
-                  ) : (
-                    <span>No disponible</span>
-                  )}
-                </td>
-              </tr>
-              <tr>
-                <td>
                   <h2 className="subtitle">Mapa:</h2>
                 </td>
                 <td>
